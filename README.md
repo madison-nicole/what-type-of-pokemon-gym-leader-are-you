@@ -16,4 +16,4 @@ This program is Buzzfeed-style quiz that tells you which type of gym leader you 
 - "outcome-dark.jpg" : [Thormeister](https://www.deviantart.com/thormeister/art/Dark-Pokemon-526568243)
 - "outcome-steel.jpg" : [Gary Day](https://aminoapps.com/c/pokemon/page/item/steel-type-fan-art/8GhX_In6RlNZNBjP6G7kePqx66o4Qg)
 - "outcome-fairy.jpg" : [Arigato](https://aminoapps.com/c/pokemon/page/blog/top-10-fairy-type-pokemon/WzhX_uRdWbBvGbWBXZ8lWl2nYmjD4n)
-- "traveling.gif" : [Aleha94[(https://www.deviantart.com/aleha84/art/Flight-910578956)
+- "traveling.gif" : [Aleha94](https://www.deviantart.com/aleha84/art/Flight-910578956)
