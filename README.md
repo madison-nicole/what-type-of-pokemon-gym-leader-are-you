@@ -1,5 +1,5 @@
 # What Type of Pokemon Gym Leader are You?
-This program is Buzzfeed-style quiz that tells you which type of gym leader you would be in the fictional universe of Pokemon.
+This program is a quiz that tells you which type of gym leader you would be in the fictional universe of Pokemon.
 
 
 ## Art Credits
