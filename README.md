@@ -46,7 +46,7 @@ Some resources that I used to learn more about HTML, CSS, JavaScript, and jQuery
 - "outcome-grass.jpg", "outcome-rock.jpg" : [saintnaruto](https://www.deviantart.com/saintnaruto/gallery)
 - "outcome-ice.jpg", "outcome-poison.jpg", "pokemon-header.jpg" : [LVStarlitSky](https://www.deviantart.com/lvstarlitsky)
 - "outcome-fighting.jpg" : [Reshiramaster](https://www.deviantart.com/reshiramaster/gallery)
-- "outcome-ground.jpg" : The Pokemon Company
+- "outcome-ground.jpg" : [The Pokemon Company](https://www.pokemon.com/us)
 - "outcome-flying.jpg" : [mark331](https://www.deviantart.com/mark331/gallery)
 - "outcome-psychic.jpg" : [DCastlee](https://medibang.com/u/Dcastlee/)
 - "outcome-bug.jpg" : [Mions-Art](https://www.deviantart.com/mions-art/art/Bug-type-Pokemon-1-907702456)
