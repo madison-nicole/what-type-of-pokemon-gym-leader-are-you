@@ -39,6 +39,7 @@ Some resources that I used to learn more about HTML, CSS, JavaScript, and jQuery
 - scaling an item on hover in [CSS](https://travis.media/how-to-make-an-item-grow-on-hover-with-css/)
 - finding a [font](https://fonts.googleapis.com/css2?family=Kanit) to use
 - adding a [shake effect](https://stackoverflow.com/questions/38132700/css-wiggle-shake-effect) to an element through CSS
+- finding the [max value](https://stackoverflow.com/questions/11301438/return-index-of-greatest-value-in-an-array) of a map in JS
 
 ## Art Credits
 - "outcome-normal.jpg", "outcome-fire.jpg" : [@Designer_Ojisan](https://twitter.com/designer_ojisan)
