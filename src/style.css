@@ -90,10 +90,29 @@ h1 {
 
 .img-only {
         margin: 0px 20px 0px 20px;
-}
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+.img-text-IMG {
+        z-index: 0;
+        margin: 15px 0px 15px 0px;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
 
 .img-only:hover {
         transform: scale(1.25);
+    }
+
+.selector-img {
+        width: 20%;
+        height: 20%;
+        z-index: 2;
+        top: 0;
+        left: 0;
     }
 
 /*source: https://stackoverflow.com/questions/38132700/css-wiggle-shake-effect
@@ -103,13 +122,21 @@ this method makes an element wiggle*/
         66% {transform: rotate(-5deg);}
     }
 
-.img-only input:checked ~ img  {
-        animation: shake 1s;
+.selected  {
+        animation: shake 0.75s;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
     }
 
+.selected.img-only {
+        box-shadow: none;
+    }
+
 .not-selected {
-        opacity: 0.65;
+        opacity: 0.5;
+    }
+
+.not-selected.bg-img-text {
+        opacity: 0.35;
     }
 
 .img-text {
@@ -150,6 +177,7 @@ this method makes an element wiggle*/
         color: rgb(82, 69, 49);
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: rgb(252, 250, 229);
+        text-shadow: 3px 3px 5px #000000;
         font-weight: 800;
         font-size: 20px;
         width: 160px;
@@ -167,7 +195,7 @@ this method makes an element wiggle*/
         border-style: solid; 
         border-radius: 4px;
         border-color: rgb(82, 69, 49);
-        width: 175px;
+        width: 210px;
         height: 45px;
         display: flex;
         align-items: center;
@@ -177,11 +205,6 @@ this method makes an element wiggle*/
         font-size: 18px;
     }
 
-.text-only input:checked ~  {
-        font-weight: 600;
-        background-color: rgb(82, 69, 49);
-        color: rgb(213, 255, 251);  
-    }
 
 input[type=radio] {
         display: none;
@@ -213,24 +236,41 @@ input[type=radio] {
         cursor: pointer;
     }
 
-.modal {
+.hidden {
         display: none;
+    }
+
+.visible {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+.errorImg {
+        display: block;
+        z-index: 10;
+        position: absolute;
+        width: 400px;
+        height: 100px;
+        margin: 0px 0px 60px 270px;
+    }
+
+.modal {
         position: fixed;
-        z-index: 2;
+        left: 0;
+        top: 0;
+        z-index: 10;
         overflow: auto;
         height: 100%;
         width: 100%;
         background-color: rgba(0,0,0,0.5);
     }
 
-#myModal {
+#resultsModal {
         transition: display 0.5s;
     }
 
-.modal-content {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+.modal-container {
         flex-direction: column;
         background-color: rgb(252, 252, 252);
         color: rgba(82, 69, 49, 0.29);

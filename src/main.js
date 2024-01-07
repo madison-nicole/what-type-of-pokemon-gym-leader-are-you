@@ -1,6 +1,7 @@
 var data = {
     "title": "What Type of Pokemon Gym Leader are You?",
     "header_image": "media/pokemon-header.jpg",
+    "selector_image": "media/pokeball.png",
     "outcomes": {
             "normal":   {
                             "img": "media/outcome-normal.jpg", 
@@ -20,27 +21,27 @@ var data = {
             "grass":    {
                             "img": "media/outcome-grass.jpg", 
                             "type": "Grass",
-                            "text": "You are."
+                            "text": "You are a grass type gym leader—like Milo, the kind and handsome giant of Galar, or Gardenia, the outdoorsy cutie of Sinnoh. You love exploring the outdoors; nothing refreshes you like the fresh air and beautiful, natural scenery. You love the charming idea of a cottage in a garden or a cabin in the woods. You take care of the world around you, and we appreciate you for it!"
                         },
             "electric": {
                             "img": "media/outcome-electric.jpg", 
                             "type": "Electric",
-                            "text": "You are."
+                            "text": "You are an electric type gym leader—like Iono the streamer of Paldea and Volkner, the worthy challenger of Sinnoh. You probably like spending time online, whether it's in discord, playing games, or streaming! While you might not be a person who'd love to spend all their time in the wilderness, you probably still want to explore the big cities, traveling to see what the world has to offer. You thrive in the city and in your online group of friends because, deep down, you love community...and your community loves you back. They will all be cheering for you at the Pokemon League Championships, good luck!"
                         },
             "ice":      {
                             "img": "media/outcome-ice.jpg", 
                             "type": "Ice",
-                            "text": "You are."
+                            "text": "You are an ice type gym leader—like the powerful Wulfric of Kalos or the equally powerful ~ equally cute Candice of Sinnoh. You might not love the humid heat outdoors, but your heart is still warm with ferocity for battle and loyalty to your friends. Chill, calm, and collected—you are a force to be reckoned with on the Pokemon battlefield...and a favorite person for your friends to have around. You keep us steady. Thank you for being you!"
                         },
             "fighting": {
                             "img": "media/outcome-fighting.jpg", 
                             "type": "Fighting",
-                            "text": "You are."
+                            "text": "You are a fighting type gym leader—like the small but strong Bea of Galar or the tough Brawly of Hoenn. You're probably into fitness and any physical activity. Regardless of how much you currently benchpress, you have a fighting spirit. You endure and keep going through the toughest battles, and you stand up for what you believe in. You have both the body and heart of a fighter, keep going straight to the Pokemon League Championship!"
                         },
             "poison":   {
                             "img": "media/outcome-poison.jpg", 
                             "type": "Poison",
-                            "text": "You are."
+                            "text": "You are a poison type gym leader—like the OG Koga of Kanto or the rockin' Roxie of Unova. You are very versatile and could enjoy lots of different interests, even from opposite ends of the spectrum. While some poison type leaders might be interested in science, others might thrive in a dark mushroom garden. Some are amazing cooks, while others are amazing chemists! What you all have in common is that you're more knowledgable than most on some things, enough that you could even be dangerous, so others should not push your buttons. But don't worry, we know you would never use it—except on the Pokemon battlefield, of course! Thanks for keeping the rest of us informed on the things that we know nothing about. Good luck at the Pokemon League Championship!"
                         },
             "ground":   {
                             "img": "media/outcome-ground.jpg", 
@@ -369,53 +370,63 @@ var data = {
                 },
                 {
                     "text": "goth",
-                    "img_url": "TBD",
+                    "img_url": "media/goth.jpg",
                     "outcome": ["dark", "ghost"]
                 },
                 {
-                    "text": "sporty",
-                    "img_url": "TBD",
-                    "outcome": ["fighting", "flying"]
-                },
-                {
-                    "text": "streetwear",
-                    "img_url": "TBD",
-                    "outcome": ["fire"]
-                },
-                {
                     "text": "cottagecore",
-                    "img_url": "TBD",
+                    "img_url": "media/cottagecore.jpg",
                     "outcome": ["grass"]
                 },
                 {
-                    "text": "beachy",
-                    "img_url": "TBD",
-                    "outcome": ["water"]
-                },
-                {
-                    "text": "cyberpunk",
-                    "img_url": "TBD",
-                    "outcome": ["steel", "electric"]
-                },
-                {
-                    "text": "casual",
-                    "img_url": "TBD",
-                    "outcome": ["normal"]
-                },
-                {
-                    "text": "lots of neutrals",
-                    "img_url": "TBD",
-                    "outcome": ["ground"]
-                },
-                {
                     "text": "outdoorsy",
-                    "img_url": "TBD",
+                    "img_url": "media/outdoorsy.jpg",
                     "outcome": ["grass", "ground", "rock"]
                 },
                 {
-                    "text": "lots of bling",
-                    "img_url": "TBD",
-                    "outcome": ["rock"]
+                    "text": "sporty",
+                    "img_url": "media/sporty.jpg",
+                    "outcome": ["fighting", "flying"]
+                },
+                {
+                    "text": "clean",
+                    "img_url": "media/clean.jpg",
+                    "outcome": ["normal"]
+                },
+                {
+                    "text": "beachy",
+                    "img_url": "media/beachy.jpg",
+                    "outcome": ["water"]
+                },
+                {
+                    "text": "country",
+                    "img_url": "media/country.jpg",
+                    "outcome": ["grass", "rock", "ground"]
+                },
+                {
+                    "text": "lots of neutrals",
+                    "img_url": "media/neutral.jpg",
+                    "outcome": ["ground"]
+                },
+                {
+                    "text": "casual",
+                    "img_url": "media/casual.jpg",
+                    "outcome": ["normal"]
+                },
+                {
+                    "text": "cyberpunk",
+                    "img_url": "media/cyberpunk.jpg",
+                    "outcome": ["steel", "electric"]
+                },
+                {
+                    "text": "streetwear",
+                    "img_url": "media/streetwear.jpg",
+                    "outcome": ["fire"]
+                },
+                {
+                    "text": "luxury",
+                    "img_url": "media/luxury.jpg",
+                    "outcome": ["rock", "steel"]
                 }
             ]
         },
@@ -424,94 +435,94 @@ var data = {
             "answer_style": "text-only",
             "answers": [
                 {
-                    "text": "heights",
-                    "answer_bg": "",
-                    "outcome": ["grass", "poison", "bug"]
+                    "text": "&#128123; ghosts &#128123;",
+                    "answer_bg": "rgb(255, 225, 216)",
+                    "outcome": ["flying", "ghost"]
                 },
                 {
-                    "text": "the ocean",
+                    "text": "&#127754; the ocean &#127754;",
                     "answer_bg": "rgb(202, 227, 253)",
                     "outcome": ["fire", "ground", "rock"]
                 },
                 {
-                    "text": "the dark",
-                    "answer_bg": "",
+                    "text": "&#127769; the dark &#127769;",
+                    "answer_bg": "rgb(145, 145, 145)",
                     "outcome": ["psychic", "ghost"]
                 },
                 {
-                    "text": "the wilderness",
+                    "text": "&#127807; the wilderness &#127807;",
                     "answer_bg": "rgb(212, 228, 50)",
                     "outcome": ["water", "ground", "rock"]
                 },
                 {
-                    "text": "spiders",
-                    "answer_bg": "",
-                    "outcome": ["grass", "psychic", "dark"]
+                    "text": "&#127755; volcanic eruptions &#127755;",
+                    "answer_bg": "rgb(255, 212, 124)",
+                    "outcome": ["grass", "ice", "bug", "steel"]
                 },
                 {
-                    "text": "ghosts",
-                    "answer_bg": "",
-                    "outcome": ["flying", "ghost"]
+                    "text": "&#128508; heights &#128508;",
+                    "answer_bg": "rgb(255, 239, 103)",
+                    "outcome": ["grass", "poison", "bug"]
                 },
                 {
-                    "text": "earthquakes",
-                    "answer_bg": "",
+                    "text": "&#127793; earthquakes &#127793;",
+                    "answer_bg": "rgb(206, 187, 179)",
                     "outcome": ["fire", "electric", "poison", "rock", "steel"]
                 },
                 {
-                    "text": "rockslide",
-                    "answer_bg": "",
-                    "outcome": ["fire", "ice", "flying", "bug"]
-                },
-                {
-                    "text": "being poisoned",
-                    "answer_bg": "rgb(212, 228, 50)",
-                    "outcome": ["grass", "fairy"]
-                },
-                {
-                    "text": "indsutrialization",
-                    "answer_bg": "",
-                    "outcome": ["ice", "rock", "fairy"]
-                },
-                {
-                    "text": "lightning",
-                    "answer_bg": "rgb(255, 239, 103)",
-                    "outcome": ["water", "flying"]
-                },
-                {
-                    "text": "mythical creatures",
-                    "answer_bg": "",
-                    "outcome": ["dragon"]
-                },
-                {
-                    "text": "the cold",
-                    "answer_bg": "rgb(202, 227, 253)",
-                    "outcome": ["grass", "ground", "flying", "dragon"]
-                },
-                {
-                    "text": "normies",
-                    "answer_bg": "",
-                    "outcome": []
-                },
-                {
-                    "text": "pretty girls",
+                    "text": "&#128152; pretty girls &#128152;",
                     "answer_bg": "rgb(255, 225, 216)",
                     "outcome": ["fighting", "dragon", "dark"]
                 },
                 {
-                    "text": "fighting",
-                    "answer_bg": "",
-                    "outcome": ["normal", "ice", "rock", "dark", "steel"]
+                    "text": "&#129514; being poisoned &#129514;",
+                    "answer_bg": "rgb(217, 206, 255)",
+                    "outcome": ["grass", "fairy"]
                 },
                 {
-                    "text": "the future",
-                    "answer_bg": "",
+                    "text": "&#127970 indsutrialization &#127970",
+                    "answer_bg": "rgb(230, 230, 230)",
+                    "outcome": ["ice", "rock", "fairy"]
+                },
+                {
+                    "text": "&#9889; lightning &#9889;",
+                    "answer_bg": "rgb(255, 239, 103)",
+                    "outcome": ["water", "flying"]
+                },
+                {
+                    "text": "&#128009; mythical creatures &#128009;",
+                    "answer_bg": "rgb(212, 228, 50)",
+                    "outcome": ["dragon"]
+                },
+                {
+                    "text": "&#10052; the cold &#10052;",
+                    "answer_bg": "rgb(202, 227, 253)",
+                    "outcome": ["grass", "ground", "flying", "dragon"]
+                },
+                {
+                    "text": "&#128372; normies &#128372;",
+                    "answer_bg": "rgb(206, 187, 179)",
+                    "outcome": []
+                },
+                {
+                    "text": "&#129704; rockslide &#129704;",
+                    "answer_bg": "rgb(230, 230, 230)",
+                    "outcome": ["fire", "ice", "flying", "bug"]
+                },
+                {
+                    "text": "&#128375; spiders &#128375;",
+                    "answer_bg": "rgb(145, 145, 145)",
+                    "outcome": ["grass", "psychic", "dark"]
+                },
+                {
+                    "text": "&#128302; the future &#128302;",
+                    "answer_bg": "rgb(217, 206, 255)",
                     "outcome": ["fighting", "poison"]
                 },
                 {
-                    "text": "volcanic eruptions",
-                    "answer_bg": "",
-                    "outcome": ["grass", "ice", "bug", "steel"]
+                    "text": "&#129354; fighting &#129354;",
+                    "answer_bg": "rgb(255, 212, 124)",
+                    "outcome": ["normal", "ice", "rock", "dark", "steel"]
                 }
             ]
         },
@@ -602,7 +613,7 @@ var data = {
                 },
                 {
                     "text": "feisty",
-                    "answer_bg": "rgb(255, 239, 103)",
+                    "answer_bg": "rgb(255, 246, 170)",
                     "outcome": ["fire"]
                 },
                 {
@@ -617,7 +628,7 @@ var data = {
                 },
                 {
                     "text": "mysterious",
-                    "answer_bg": "rgb(202, 187, 255)",
+                    "answer_bg": "rgb(217, 206, 255)",
                     "outcome": ["dark", "ghost"]
                 },
                 {
@@ -627,7 +638,7 @@ var data = {
                 },
                 {
                     "text": "enchanting",
-                    "answer_bg": "rgb(255, 239, 103)",
+                    "answer_bg": "rgb(255, 246, 170)",
                     "outcome": ["dragon", "fairy"]
                 },
                 {
@@ -637,12 +648,12 @@ var data = {
                 },
                 {
                     "text": "daydreamer",
-                    "answer_bg": "rgb(255, 239, 103)",
+                    "answer_bg": "rgb(255, 246, 170)",
                     "outcome": ["flying", "fairy"]
                 },
                 {
                     "text": "dependable",
-                    "answer_bg": "rgb(202, 187, 255)",
+                    "answer_bg": "rgb(217, 206, 255)",
                     "outcome": ["rock", "steel"]
                 },
                 {
@@ -652,7 +663,7 @@ var data = {
                 },
                 {
                     "text": "down to earth",
-                    "answer_bg": "rgb(202, 187, 255)",
+                    "answer_bg": "rgb(217, 206, 255)",
                     "outcome": ["ground"]
                 }
             ]
@@ -669,7 +680,7 @@ $('header').append(`<h1>${data.title}</h1>`);
 $('header').append(`<img class="background-img" src="${data.header_image}"/>`);
 
 // retrieves the questions
-for (var i = 0, n = data.questions.length; i < n; i++)
+for (var i = 0; i < data.questions.length; i++)
 {
   var q = data.questions[i];
   var question = q.question;
@@ -692,22 +703,22 @@ for (var i = 0, n = data.questions.length; i < n; i++)
     // set up each answer button
     if (answerStyle === 'img-only') 
     {
-        var answerButton = `<label><img src="${answers[j].img_url}"/><input type="radio" name="${i}" value="${answers[j].text}"/></label>`;
+        var answerButton = `<label><img class="img-text-IMG" src="${answers[j].img_url}"/><img class="hidden selector-img" src="${data.selector_image}"/><input type="radio" name="${i}" value="${j}"/></label>`;
         var answerId = `img${i}${j}`;
     }
     else if (answerStyle === 'img-text')
     {
-        var answerButton = `<label><img src="${answers[j].img_url}"/><span>${answers[j].text}</span><input type="radio" name="${i}" value="${answers[j].text}"/></label>`;
+        var answerButton = `<label><img src="${answers[j].img_url}"/><span>${answers[j].text}</span><input type="radio" name="${i}" value="${j}"/></label>`;
         var answerId = `imgtext${i}${j}`;
     }
     else if (answerStyle === 'bg-img-text')
     {
-        var answerButton = `<label><span>${answers[j].text}</span><input type="radio" name="${i}" value="${answers[j].text}"/></label>`;
+        var answerButton = `<label><span>${answers[j].text}</span><input type="radio" name="${i}" value="${j}"/></label>`;
         var answerId = `bgimgtext${i}${j}`;
     }
     else 
     {
-        var answerButton = `<label>${answers[j].text}<input type="radio" name="${i}" value="${answers[j].text}"/></label>`; // text-only
+        var answerButton = `<label>${answers[j].text}<input type="radio" name="${i}" value="${j}"/></label>`; // text-only
         var answerId = `text${i}${j}`;
     }
     
@@ -730,68 +741,115 @@ for (var i = 0, n = data.questions.length; i < n; i++)
 }
 
 // create a class for unselected answers
-$(".answer").on("click", function(e) {
-    $(this).removeClass('not-selected');
-    $(this).siblings().addClass('not-selected');
-    console.log("hello world");
+$(".answer").click(function() {
+    $(this).removeClass("not-selected");
+    $(this).addClass("selected");
+    $(this).siblings().addClass("not-selected");
+    $(this).siblings().removeClass("selected");
+
+    // add selector image to selected answer
+    $(this).find(".selector-img").addClass("visible");
+    $(this).find(".selector-img").removeClass("hidden");
+    $(this).siblings().find(".selector-img").removeClass("visible");
+    $(this).siblings().find(".selector-img").addClass("hidden");
   });
-  
-// retrieves the outcomes
-results = data.outcomes;
 
 // retrieve the modal, button, and span to close
 var modal = document.getElementById("myModal");
+var errorModal = document.getElementById("errorMsg");
 var submit = document.getElementById("submit");
 
 
-  $('#submit').on('click', function(e) {
-    // unblock the modal display
-    modal.style.display = "block";
+$("#submit").on("click", function(e) {
+    // gather all checked radio-button values
+    var choices = $("input[type='radio']:checked").map(function(i, radio) {
+        return $(radio).val();
+      }).toArray(choices);
+      // creates an array of choices = ["valueofradiobox1", "valueofradiobox2", "valueofradiobox2"]
     
+    console.log(choices);
+
     // ensure all of the questions are answered
     if(choices.length !== data.questions.length) 
     {
-        document.getElementById("modal-content").textContent = "Answer all of the questions before submitting!";
+        $(".error-container").append("<img class='errorImg' src='media/answer-all-questions.gif'/>");
+        $(".error-container").removeClass("hidden");
+        $(".error-container").addClass("visible");
+
+        setTimeout(() => {$(".error-container").addClass("hidden"); $(".error-container").removeClass("visible");}, 5000);
+        return;
     }
-    else
-    {
-        var c = calculateResults(choices);
-    }
+
+    // unblock the modal display
+    $("#resultsModal").removeClass("hidden");
+    $("#resultsModal").addClass("visible");
+
+    var c = calculateResults(choices);
 
     // display the result
-    var outcomeTitle = data.outcomes.c.text;
-    $("modal-content").append("<h3>" + outcomeTitle  + "</h3>");
-
+    var outcomeTitle = data.outcomes.c.type;
     var outcomeImg = data.outcomes.c.img;
-    $("modal-content").append("<img class='outcome-img' src='" + outcomeTitle + "'/>");
-
-    // gather all checked radio-button values
-    var choices = $("input[type='radio']:checked").map(function(i, radio) {
-      return $(radio).val();
-    }).toArray(choices);
-    // creates an array of choices = ["valueofradiobox1", "valueofradiobox2", "valueofradiobox2"]
-  
+    var outcomeText = data.outcomes.c.text;
+    
+    $("modal-content").append("<h3>" + outcomeTitle  + "</h3> <img class='outcome-img' src='" + outcomeTitle + "'/> <p>" + outcomeText + "</p>");
     }
- );
+);
 
   function calculateResults(choices) {
-    var results = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-    // 
-
-    for (var i = 0; i < choices.length; i++)
+    // create a map of the tally of each outcome's score 
+    var score = new Map();
+    
+    for (i = 0; i < data.questions.length; i++)
     {
-      // store the array of outcomes
-      var outcomes = choices[i];
+        // store the answer in the results map
+        var a = choices[i];
+        var question = data.questions[i];
+        var answer = question.answers[a];
+        var outcomes = answer.outcome;
 
-      // if there is more than one possible outcome
-      if (choices[i].length > 1) 
-      {
+        for (var j = 0; j < outcomes.length; i++)
+        {
+            var outcome = outcomes[j];
 
-      }
-      // if there is only one 
-      else
-      {
-        return outcomes;
-      }
+            const value = score.get(outcome);
+
+            if (score.has(outcome))
+            {
+                score.set(outcome, value + 1);
+            }
+            else
+            {
+                score.set(outcome, 1);
+            }
+        }
     }
-  };
+    
+    return findMaxKey(score);
+  }
+
+  // resource: https://stackoverflow.com/questions/11301438/return-index-of-greatest-value-in-an-array
+  function findMaxKey(map) {
+    if (map.size === 0) 
+    {
+        return -1;
+    }
+    
+    // convert to array to iterate over and compare elements
+    var arr = Array.from(map);
+
+    var maxValue = 0;
+    var maxKey = "";
+
+    arr.forEach((element) => {
+        const key = element[0];
+        const value = element[1];
+
+        if (value > maxValue)
+        {
+            maxValue = value;
+            maxKey = key;
+        }
+    });
+
+    return maxKey;
+}

@@ -8,17 +8,21 @@
 
     <div class="questions"></div>
 
+    <div class="error-container hidden"></div>
+
     <div class="button-container">
         <button id="submit">Submit</button>
     </div>
 
     <!--source: https://www.w3schools.com/howto/howto_css_modals.asp -->
-    <div class="modal" id="myModal">
-        <button class="end" id="close-modal">X</button>
-        <div class="modal-content"></div>
-        <div class="end-buttons">
-            <button class="end" id="try-again">Try Again</button>
-            <button class="end" id="share">Share Results</button>
+    <div class="modal hidden" id="resultsModal">
+        <div class="modal-container">
+            <button class="end" id="close-modal">X</button>
+            <div class="modal-text"></div>
+            <div class="end-buttons">
+                <button class="end" id="try-again">Try Again</button>
+                <button class="end" id="share">Share Results</button>
+            </div>
         </div>
     </div>
 
