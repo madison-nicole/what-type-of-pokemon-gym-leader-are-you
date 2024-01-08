@@ -14,6 +14,9 @@
   <p>Each answer corresponds to one or multiple outcomes and increments the total points towards the outcome accordingly. </p>
 </div>
 
+<br>
+<br>
+
 <div align="center">
   <img width="40%" height="40%" src="https://github.com/m-saylor/what-type-of-pokemon-gym-leader-are-you/blob/main/readme-media/PokemonTypes.png"/>
 </div>
