@@ -279,8 +279,8 @@ input[type=radio] {
 .modal-container {
         flex-direction: column;
         background-color: rgb(252, 252, 252);
-        width: 55%;
-        height: 90%;
+        width: 800px;
+        height: 680px;
         position: relative;
     }
 
