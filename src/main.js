@@ -893,7 +893,7 @@ $("#submit").on("click", function(e) {
     $("#resultsModal").removeClass("hidden");
     $("#resultsModal").addClass("visible");
     
-    $(".modal-content").append("<h3>" + outcomeTitle  + "</h3> <img class='outcome-img' src='" + outcomeImg + "'/> <p>" + outcomeText + "</p>");
+    $(".modal-content").append("<div class='card'><h3>" + outcomeTitle  + "</h3> <img class='outcome-img' src='" + outcomeImg + "'/></div><p>" + outcomeText + "</p>");
     }
 );
 

@@ -279,9 +279,8 @@ input[type=radio] {
 .modal-container {
         flex-direction: column;
         background-color: rgb(252, 252, 252);
-        color: rgba(82, 69, 49, 0.29);
         width: 55%;
-        height: 60%;
+        height: 80%;
         position: relative;
     }
 
@@ -295,6 +294,7 @@ input[type=radio] {
 .modal-content > p {
         color: rgb(82, 69, 49);
         margin: 20px 30px 30px 30px;
+        width: 600px;
 }
 
 .modal-content {
@@ -309,10 +309,19 @@ input[type=radio] {
         width: 400px;
     }
 
-#close-modal {
-        position: absolute;
+.card {
+        box-shadow: 0 2px 8px 0 rgba(82, 69, 49, 0.3), 0 3px 20px 0 rgba(82, 69, 49, 0.29);
+        border-radius: 4px;
+        margin-top: 55px;
+    }
+
+.close {
         display: flex; 
         justify-content: flex-end;
+    }
+
+#close-modal {
+        position: absolute;
         margin: 10px 25px 40px 0px;
         background-color: rgba(82, 69, 49);
         border-style: solid;
@@ -329,19 +338,24 @@ input[type=radio] {
 .end-buttons {
         display: flex;
         justify-content: space-around;
-        background-color: rgb(82, 69, 49);
-        color: rgb(252, 250, 229);
-        font-weight: 600;
-        font-size: 20px;
-        border: 4px rgb(252, 250, 229);
-        border-radius: 8px;
-        border-style: solid;
-        text-decoration: none;
-        padding: 15px 15px;
-        transition: all .1s ease-in-out;
     }
 
-.end-buttons:hover {
+.end-buttons > button {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(82, 69, 49);
+    color: rgb(252, 250, 229);
+    font-weight: 600;
+    font-size: 20px;
+    border: 4px rgb(252, 250, 229);
+    border-radius: 8px;
+    border-style: solid;
+    text-decoration: none;
+    padding: 15px 15px;
+    transition: all .1s ease-in-out;
+}
+
+.end-buttons > button:hover {
         background-color: rgb(252, 250, 229);
         color: rgb(82, 69, 49); 
         border: 5px rgb(82, 69, 49);
