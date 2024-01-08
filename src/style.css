@@ -113,7 +113,7 @@ h1 {
         z-index: 2;
         position: relative;
         top: -80;
-        left: 50;
+        left: 40;
     }
 
 .img-only-label {
@@ -281,6 +281,7 @@ input[type=radio] {
         background-color: rgb(252, 252, 252);
         color: rgba(82, 69, 49, 0.29);
         width: 75%;
+        height: 60%;
         position: relative;
     }
 

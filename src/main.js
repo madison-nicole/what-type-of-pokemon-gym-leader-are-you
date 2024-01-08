@@ -882,18 +882,18 @@ $("#submit").on("click", function(e) {
         return;
     }
 
-    // unblock the modal display
-    //$("#resultsModal").removeClass("hidden");
-    //$("#resultsModal").addClass("visible");
-
     var c = calculateResults(choices);
 
     // display the result
     var outcomeTitle = data.outcomes[c].type;
     var outcomeImg = data.outcomes[c].img;
     var outcomeText = data.outcomes[c].text;
+
+    // unblock the modal display
+    $("#resultsModal").removeClass("hidden");
+    $("#resultsModal").addClass("visible");
     
-    //$("modal-content").append("<h3>" + outcomeTitle  + "</h3> <img class='outcome-img' src='" + outcomeTitle + "'/> <p>" + outcomeText + "</p>");
+    $("modal-content").append("<h3>" + outcomeTitle  + "</h3> <img class='outcome-img' src='" + outcomeTitle + "'/> <p>" + outcomeText + "</p>");
     }
 );
 
@@ -908,6 +908,7 @@ $("#submit").on("click", function(e) {
         var question = data.questions[i];
         var answer = question.answers[a];
         var outcomes = answer.outcome;
+        var weight = question.weight;
 
         for (var j = 0; j < outcomes.length; j++)
         {
@@ -917,11 +918,11 @@ $("#submit").on("click", function(e) {
 
             if (score.has(outcome))
             {
-                score.set(outcome, value + 1);
+                score.set(outcome, value + (1 * weight));
             }
             else
             {
-                score.set(outcome, 1);
+                score.set(outcome, (1 * weight));
             }
         }
     }
