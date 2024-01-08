@@ -15,7 +15,7 @@
 </div>
 
 <div align="center">
-  <img width="70%" height="70%" src="https://github.com/m-saylor/what-type-of-pokemon-gym-leader-are-you/blob/main/readme-media/PokemonTypes.png"/>
+  <img width="40%" height="40%" src="https://github.com/m-saylor/what-type-of-pokemon-gym-leader-are-you/blob/main/readme-media/PokemonTypes.png"/>
 </div>
 
 <br>
