@@ -31,6 +31,8 @@ Upon viewing your results, you can close the modal, reset your answers to take t
 - The '/src' file contains all of the files necessary to run the program.
 - The program imports data for the questions, answers, images, outcomes, and anything specific to the quiz via a JSON file, named 'data.json.' Thus, the code could be reused for any future quiz.
 - 'main.js' contains the javascript necessary for the page interactivity, which is a mixture of both native JS and jQuery.
+- 'style.css' contains the style document.
+- 'index.html' is the quiz structure but can be repurposed for any quiz as all data is imported from the json file.
 
 ## Sources
 Some resources that I used to learn more about HTML, CSS, JavaScript, and jQuery for this project are listed below:
@@ -57,3 +59,4 @@ Some resources that I used to learn more about HTML, CSS, JavaScript, and jQuery
 - "outcome-steel.jpg" : [Gary Day](https://aminoapps.com/c/pokemon/page/item/steel-type-fan-art/8GhX_In6RlNZNBjP6G7kePqx66o4Qg)
 - "outcome-fairy.jpg" : [Arigato](https://aminoapps.com/c/pokemon/page/blog/top-10-fairy-type-pokemon/WzhX_uRdWbBvGbWBXZ8lWl2nYmjD4n)
 - "traveling.gif" : [Aleha94](https://www.deviantart.com/aleha84/art/Flight-910578956)
+- pokemon type icons: [Pokemon Wiki](https://pokemon.fandom.com/wiki/Types)

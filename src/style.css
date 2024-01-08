@@ -113,7 +113,12 @@ h1 {
         z-index: 2;
         position: relative;
         top: -80;
-        
+        left: 50;
+    }
+
+.img-only-label {
+        height: 140px;
+        width: 130px;
     }
 
 /*source: https://stackoverflow.com/questions/38132700/css-wiggle-shake-effect

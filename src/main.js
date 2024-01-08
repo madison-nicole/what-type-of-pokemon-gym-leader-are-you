@@ -36,67 +36,68 @@ var data = {
             "fighting": {
                             "img": "media/outcome-fighting.jpg", 
                             "type": "Fighting",
-                            "text": "You are a fighting type gym leader—like the small but strong Bea of Galar or the tough Brawly of Hoenn. You're probably into fitness and any physical activity. Regardless of how much you currently benchpress, you have a fighting spirit. You endure and keep going through the toughest battles, and you stand up for what you believe in. You have both the body and heart of a fighter, keep going straight to the Pokemon League Championship!"
+                            "text": "You are a fighting type gym leader—like the small but strong Bea of Galar or the tough Brawly of Hoenn. First and foremost, you are courageous and determined. You're probably into fitness and any physical activity. Regardless of how much you currently benchpress, you have a fighting spirit. You endure and keep going through the toughest battles, and you stand up for what you believe in. You have both the body and heart of a fighter, keep going straight to the Pokemon League Championship!"
                         },
             "poison":   {
                             "img": "media/outcome-poison.jpg", 
                             "type": "Poison",
-                            "text": "You are a poison type gym leader—like the OG Koga of Kanto or the rockin' Roxie of Unova. You are very versatile and could enjoy lots of different interests, even from opposite ends of the spectrum. While some poison type leaders might be interested in science, others might thrive in a dark mushroom garden. Some are amazing cooks, while others are amazing chemists! What you all have in common is that you're more knowledgable than most on some things, enough that you could even be dangerous, so others should not push your buttons. But don't worry, we know you would never use it—except on the Pokemon battlefield, of course! Thanks for keeping the rest of us informed on the things that we know nothing about. Good luck at the Pokemon League Championship!"
+                            "text": "You are a poison type gym leader—like the OG Koga of Kanto or the rockin' Roxie of Unova. Poison type gym leaders are very clever. However, your interests are versatile, and you could enjoy lots of different interests, even from opposite ends of the spectrum. While some poison type leaders might be interested in science, others might thrive in a dark mushroom garden. Some are amazing cooks, while others are amazing chemists! What you all have in common is that you're more knowledgable than most on some things, enough that you could even be dangerous, so others should not push your buttons. But don't worry, we know you would never use it—except on the Pokemon battlefield, of course! Thanks for keeping the rest of us informed on the things that we know nothing about. Good luck at the Pokemon League Championship!"
                         },
             "ground":   {
                             "img": "media/outcome-ground.jpg", 
                             "type": "Ground",
-                            "text": "You are."
+                            "text": "You are a ground type gym leader—like the strong Bertha of Sinnoh or the friendly Hapu of Alola."
                         },
             "flying":   {
                             "img": "media/outcome-flying.jpg", 
                             "type": "Flying",
-                            "text": "You are."
+                            "text": "You are a flying type gym leader—."
                         },
             "psychic":  {
                             "img": "media/outcome-psychic.jpg", 
                             "type": "Psychic",
-                            "text": "You are."
+                            "text": "You are a psychic type gym leader—."
                         },
             "bug":      {
                             "img": "media/outcome-bug.jpg", 
                             "type": "Bug",
-                            "text": "You are."
+                            "text": "You are a bug type gym leader—."
                         },
             "rock":     {
                             "img": "media/outcome-rock.jpg", 
                             "type": "Rock",
-                            "text": "You are."
+                            "text": "You are a rock type gym leader—."
                         },
             "ghost":    {
                             "img": "media/outcome-ghost.jpg", 
                             "type": "Ghost",
-                            "text": "You are."
+                            "text": "You are a ghost type gym leader—."
                         },
             "dragon":   {
                             "img": "media/outcome-dragon.jpg", 
                             "type": "Dragon",
-                            "text": "You are."
+                            "text": "You are a dragon type gym leader—."
                         },
             "dark":     {
                             "img": "media/outcome-dark.jpg", 
                             "type": "Dark",
-                            "text": "You are."
+                            "text": "You are a dark type gym leader—."
                         },
             "steel":    {
                             "img": "media/outcome-steel.jpg", 
                             "type": "Steel",
-                            "text": "You are."
+                            "text": "You are a steel type gym leader—."
                         },
             "fairy":    {
                             "img": "media/outcome-fairy.jpg", 
                             "type": "Fairy",
-                            "text": "You are."
+                            "text": "You are a fairy type gym leader—."
                         }
     },
     "questions": [
         {
             "question": "Pick a Pokemon for your team!",
+            "weight": "0.5",
             "answer_style": "img-only",
             "answers": [
                 {
@@ -179,6 +180,7 @@ var data = {
 
         {
             "question": "Where would you prefer to live?",
+            "weight": "1.0",
             "answer_style": "img-text",
             "answers": [
                 {
@@ -236,6 +238,7 @@ var data = {
         {
             "question": "Which is your favorite activity?",
             "answer_style": "text-only",
+            "weight": "1.0",
             "answers": [
                 {
                     "text": "working out",
@@ -346,6 +349,7 @@ var data = {
         },
         {
             "question": "Which of these best describes your aesthetic?",
+            "weight": "1.0",
             "answer_style": "bg-img-text",
             "answers": [
                 {
@@ -432,6 +436,7 @@ var data = {
         },
         {
             "question": "What are you most afraid of?",
+            "weight": "1.0",
             "answer_style": "text-only",
             "answers": [
                 {
@@ -528,6 +533,7 @@ var data = {
         },
         {
             "question": "What's your favorite game franchise?",
+            "weight": "0.5",
             "answer_style": "img-text",
             "answers": [
                 {
@@ -604,6 +610,7 @@ var data = {
         },
         {
             "question": "What's your personality like?",
+            "weight": "1.0",
             "answer_style": "text-only",
             "answers": [
                 {
@@ -667,6 +674,103 @@ var data = {
                     "outcome": ["ground"]
                 }
             ]
+        },
+        {
+            "question": "What type of Pokemon trainer do YOU think you'd be?",
+            "weight": "1.1",
+            "answer_style": "img-only",
+            "answers": [
+                {
+                    "text": "normal",
+                    "img_url": "media/normal-type.png",
+                    "outcome": ["normal"]
+                },
+                {
+                    "text": "fire",
+                    "img_url": "media/fire-type.png",
+                    "outcome": ["fire"]
+                },
+                {
+                    "text": "water",
+                    "img_url": "media/water-type.png",
+                    "outcome": ["water"]
+                },
+                {
+                    "text": "grass",
+                    "img_url": "media/grass-type.png",
+                    "outcome": ["grass"]
+                },
+                {
+                    "text": "electric",
+                    "img_url": "media/electric-type.png",
+                    "outcome": ["electric"]
+                },
+                {
+                    "text": "ice",
+                    "img_url": "media/ice-type.png",
+                    "outcome": ["ice"]
+                },  
+                {
+                    "text": "fighting",
+                    "img_url": "media/fighting-type.png",
+                    "outcome": ["fighting"]
+                },
+                {
+                    "text": "poison",
+                    "img_url": "media/poison-type.png",
+                    "outcome": ["poison"]
+                },
+                {
+                    "text": "ground",
+                    "img_url": "media/ground-type.png",
+                    "outcome": ["ground"]
+                },
+                {
+                    "text": "flying",
+                    "img_url": "media/flying-type.png",
+                    "outcome": ["flying"]
+                },
+                {
+                    "text": "psychic",
+                    "img_url": "media/psychic-type.png",
+                    "outcome": ["psychic"]
+                },
+                {
+                    "text": "bug",
+                    "img_url": "media/bug-type.png",
+                    "outcome": ["bug"]
+                },
+                {
+                    "text": "rock",
+                    "img_url": "media/rock-type.png",
+                    "outcome": ["rock"]
+                },
+                {
+                    "text": "ghost",
+                    "img_url": "media/ghost-type.png",
+                    "outcome": ["ghost"]
+                },
+                {
+                    "text": "dragon",
+                    "img_url": "media/dragon-type.png",
+                    "outcome": ["dragon"]
+                },
+                {
+                    "text": "dark",
+                    "img_url": "media/dark-type.png",
+                    "outcome": ["dark"]
+                },
+                {
+                    "text": "steel",
+                    "img_url": "media/steel-type.png",
+                    "outcome": ["steel"]
+                },
+                {
+                    "text": "fairy",
+                    "img_url": "media/fairy-type.png",
+                    "outcome": ["fairy"]
+                }
+            ]
         }
     ]
 }
@@ -703,7 +807,7 @@ for (var i = 0; i < data.questions.length; i++)
     // set up each answer button
     if (answerStyle === 'img-only') 
     {
-        var answerButton = `<label><img class="img-text-IMG" src="${answers[j].img_url}"/><img class="hidden selector-img" src="${data.selector_image}"/><input type="radio" name="${i}" value="${j}"/></label>`;
+        var answerButton = `<label class="img-only-label"><img class="img-text-IMG" src="${answers[j].img_url}"/><img class="hidden selector-img" src="${data.selector_image}"/><input type="radio" name="${i}" value="${j}"/></label>`;
         var answerId = `img${i}${j}`;
     }
     else if (answerStyle === 'img-text')
@@ -762,12 +866,10 @@ var submit = document.getElementById("submit");
 
 $("#submit").on("click", function(e) {
     // gather all checked radio-button values
-    var choices = $("input[type='radio']:checked").map(function(i, radio) {
+    var choices = $(".selected > label > input").map((i, radio) => {
         return $(radio).val();
       }).toArray(choices);
       // creates an array of choices = ["valueofradiobox1", "valueofradiobox2", "valueofradiobox2"]
-    
-    console.log(choices);
 
     // ensure all of the questions are answered
     if(choices.length !== data.questions.length) 
@@ -781,17 +883,17 @@ $("#submit").on("click", function(e) {
     }
 
     // unblock the modal display
-    $("#resultsModal").removeClass("hidden");
-    $("#resultsModal").addClass("visible");
+    //$("#resultsModal").removeClass("hidden");
+    //$("#resultsModal").addClass("visible");
 
     var c = calculateResults(choices);
 
     // display the result
-    var outcomeTitle = data.outcomes.c.type;
-    var outcomeImg = data.outcomes.c.img;
-    var outcomeText = data.outcomes.c.text;
+    var outcomeTitle = data.outcomes[c].type;
+    var outcomeImg = data.outcomes[c].img;
+    var outcomeText = data.outcomes[c].text;
     
-    $("modal-content").append("<h3>" + outcomeTitle  + "</h3> <img class='outcome-img' src='" + outcomeTitle + "'/> <p>" + outcomeText + "</p>");
+    //$("modal-content").append("<h3>" + outcomeTitle  + "</h3> <img class='outcome-img' src='" + outcomeTitle + "'/> <p>" + outcomeText + "</p>");
     }
 );
 
@@ -799,7 +901,7 @@ $("#submit").on("click", function(e) {
     // create a map of the tally of each outcome's score 
     var score = new Map();
     
-    for (i = 0; i < data.questions.length; i++)
+    for (i = 0; i < choices.length; i++)
     {
         // store the answer in the results map
         var a = choices[i];
@@ -807,7 +909,7 @@ $("#submit").on("click", function(e) {
         var answer = question.answers[a];
         var outcomes = answer.outcome;
 
-        for (var j = 0; j < outcomes.length; i++)
+        for (var j = 0; j < outcomes.length; j++)
         {
             var outcome = outcomes[j];
 
