@@ -111,8 +111,9 @@ h1 {
         width: 20%;
         height: 20%;
         z-index: 2;
-        top: 0;
-        left: 0;
+        position: relative;
+        top: -80;
+        
     }
 
 /*source: https://stackoverflow.com/questions/38132700/css-wiggle-shake-effect
