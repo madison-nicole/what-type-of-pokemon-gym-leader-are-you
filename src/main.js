@@ -11,7 +11,7 @@ var data = {
             "fire":     {
                             "img": "media/outcome-fire.jpg", 
                             "type": "Fire",
-                            "text": "You are a fire type gym leader, like our fiery girl Mela of Paldea and the powerful Kabu of Galar. You love the summer sunshine and the latest fashion trends, but even without the trends, your aesthetic is usually pretty fire, no pun intended. You might be feisty, but we know that feistiness comes from spirit and true passion. You will achieve your dreams."
+                            "text": "You are a fire type gym leader, like our fiery girl Mela of Paldea and the powerful Kabu of Galar. You love the summer sunshine and the latest fashion trends, but even without the trends, your aesthetic is usually pretty fire, no pun intended. You might be feisty, but we know that feistiness comes from spirit and true passion. You will achieve your dreams!"
                         },
             "water":    {
                             "img": "media/outcome-water.jpg", 
@@ -36,7 +36,7 @@ var data = {
             "fighting": {
                             "img": "media/outcome-fighting.jpg", 
                             "type": "Fighting",
-                            "text": "You are a fighting type gym leader, like the small but strong Bea of Galar or the tough Brawly of Hoenn. First and foremost, you are courageous and determined. You're probably into fitness and any physical activity. Regardless of how much you currently benchpress, you have a fighting spirit. You endure and keep going through the toughest battles, and you stand up for what you believe in. You have both the body and heart of a fighter, keep going straight to the Pokemon League Championship!"
+                            "text": "You are a fighting type gym leader, like the small but strong Bea of Galar or the tough Brawly of Hoenn. First and foremost, you are courageous and determined. You're probably into fitness and any physical activity. Regardless of how much you currently benchpress, you have a fighting spirit. You endure and keep going through the toughest battles, and you stand up for what you believe in. You have both the body and heart of a fighter...keep going straight to the Pokemon League Championship!"
                         },
             "poison":   {
                             "img": "media/outcome-poison.jpg", 
@@ -46,52 +46,52 @@ var data = {
             "ground":   {
                             "img": "media/outcome-ground.jpg", 
                             "type": "Ground",
-                            "text": "You are a ground type gym leader, like the strong Bertha of Sinnoh or the friendly Hapu of Alola."
+                            "text": "You are a ground type gym leader, like the strong Bertha of Sinnoh or the friendly Hapu of Alola. You are reliable, dependable, and down to earth. Thanks for being real with the rest of us and keeping us...grounded!"
                         },
             "flying":   {
                             "img": "media/outcome-flying.jpg", 
                             "type": "Flying",
-                            "text": "You are a flying type gym leader—."
+                            "text": "You are a flying type gym leader, like Skyla of Unova, who plays by her own rules. You are a free-spirited and adventurous daydreamer. You enjoy travel, exploration, and trying exciting new things. You have your head in the clouds with big dreams...and we believe in you. Good luck out there!"
                         },
             "psychic":  {
                             "img": "media/outcome-psychic.jpg", 
                             "type": "Psychic",
-                            "text": "You are a psychic type gym leader—."
+                            "text": "You are a psychic type gym leader, like the emotionally-intelligent and stunningly beautiful Tulip of Paldea...or the high-ranking Lucian of Sinnoh. You have great intuition and can rely on your instincts in battle to predict the other player's moves. You are very clever, both emotionally and intellectually. Good luck at the Pokemon League Championship...we know you will be a worthy foe!"
                         },
             "bug":      {
                             "img": "media/outcome-bug.jpg", 
                             "type": "Bug",
-                            "text": "You are a bug type gym leader—."
+                            "text": "You are a bug type gym leader, like the sweet Katy of Paldea and the adventurous Bugsy of Johto. You are persistent and resourceful in battles...and in life. You'll always find a way to push through and win. Good luck at the Pokemon League Championships, although we know you probably won't need it!"
                         },
             "rock":     {
                             "img": "media/outcome-rock.jpg", 
                             "type": "Rock",
-                            "text": "You are a rock type gym leader—."
+                            "text": "You are a rock type gym leader, like our trusty old companion Brock and the steadfast Roark of Sinnoh. You are resilient and dependable, resourceful in and outside of battle. You probably appreciate impressive craftmanship, whether it's beautifully-made jewelry or a wonderfully-constructed building of old architecture. You love a breathtaking outdoor view, and some might not know this, but you probably have excellent taste. Rock type trainers always look good... And we can't wait to see you at the Pokemon League Championships this year!"
                         },
             "ghost":    {
                             "img": "media/outcome-ghost.jpg", 
                             "type": "Ghost",
-                            "text": "You are a ghost type gym leader—."
+                            "text": "You are a ghost type gym leader, like the shy Allister of Galar and the mysterious Shauntal of Unova. You can be mysterious to others and probably enjoy alternative, dark aesthetics...and maybe some horror, too! Ghost types can be so difficult to beat, so we probably want to have you on our side. Good luck at the Pokemon League Championships!"
                         },
             "dragon":   {
                             "img": "media/outcome-dragon.jpg", 
                             "type": "Dragon",
-                            "text": "You are a dragon type gym leader—."
+                            "text": "You are a dragon type gym leader, like the cool, powerful Raihan of Galar and the young champion Iris of Unova. You are among some of the greats, like Lance of Kanto and Johto, one of the greatest Elite Four members of all time. Dragon type gym leaders may enjoy escaping into a fantasy world, through games, books, and movies. They are some of the most powerful Pokemon trainers out there...and also the most attractive, let's be real! Enjoy looking good and feeling good on the battlefield at the Pokemon League Championships this year, we can't wait!"
                         },
             "dark":     {
                             "img": "media/outcome-dark.jpg", 
                             "type": "Dark",
-                            "text": "You are a dark type gym leader—."
+                            "text": "You are a dark type gym leader, like the alt rocker Piers of Galar and everyone's favorite goth girlfriend, Marnie. You might enjoy some 'dark' interests, and you can be cunning in battle..but you are still truly kindhearted, underneath all the shyness. We love your presence...and your aesthetic!"
                         },
             "steel":    {
                             "img": "media/outcome-steel.jpg", 
                             "type": "Steel",
-                            "text": "You are a steel type gym leader—."
+                            "text": "You are a steel type gym leader. You have the resilience of Jasmine of Johto and the main character energy of Steven Stone. You are resilient and determined. You probably enjoy technology more than the others, whether it be big city exploration, the latest PC build, or flying to a new destination. We know you are a strong-willed opponent who will stop at nothing to stand your ground. When you earn a Pokemon battle victory, you definitely deserve it. Good luck at the Pokemon League Championships!"
                         },
             "fairy":    {
                             "img": "media/outcome-fairy.jpg", 
                             "type": "Fairy",
-                            "text": "You are a fairy type gym leader—."
+                            "text": "You are a fairy type gym leader, like the adorable Lacey of Paldea and our formal rival, Bede of Galar. You are nurturing and kind, whether secretly or outwardly, and you love companionship. You are enchanting to others around you, and they always enjoy your latest takes or your latest creative work. You probably enjoy escaping reality through fantasy. You are a gift to all of us around you. Let us just admire your beauty and kindness from afar. Good luck at the Pokemon League Championships!"
                         }
     },
     "questions": [
@@ -211,7 +211,7 @@ var data = {
                 {
                     "text": "The Forest",
                     "img_url": "media/forest.jpeg",
-                    "outcome": ["fairy", "poison", "grass"]
+                    "outcome": ["fairy", "poison", "grass", "rock"]
                 },
                 {
                     "text": "A Haunted Village",
@@ -226,7 +226,7 @@ var data = {
                 {
                     "text": "A Butterfly Garden",
                     "img_url": "media/butterfly-garden.jpeg",
-                    "outcome": ["flying", "bug"]
+                    "outcome": ["flying", "bug", "fairy"]
                 },
                 {
                     "text": "Always Traveling!",
@@ -651,7 +651,7 @@ var data = {
                 {
                     "text": "clever",
                     "answer_bg": "rgb(202, 227, 253)",
-                    "outcome": ["psychic"]
+                    "outcome": ["psychic", "poison"]
                 },
                 {
                     "text": "daydreamer",
@@ -672,6 +672,51 @@ var data = {
                     "text": "down to earth",
                     "answer_bg": "rgb(217, 206, 255)",
                     "outcome": ["ground"]
+                },
+                {
+                    "text": "nurturing",
+                    "answer_bg": "rgb(202, 227, 253)",
+                    "outcome": ["grass", "fairy"]
+                },
+                {
+                    "text": "free-spirited",
+                    "answer_bg": "rgb(255, 246, 170)",
+                    "outcome": ["flying"]
+                },
+                {
+                    "text": "energetic",
+                    "answer_bg": "rgb(202, 227, 253)",
+                    "outcome": ["electric"]
+                },
+                {
+                    "text": "adventurous",
+                    "answer_bg": "rgb(255, 225, 216)",
+                    "outcome": ["flying"]
+                },
+                {
+                    "text": "determined",
+                    "answer_bg": "rgb(217, 206, 255)",
+                    "outcome": ["fighting"]
+                },
+                {
+                    "text": "persistent",
+                    "answer_bg": "rgb(255, 225, 216)",
+                    "outcome": ["bug"]
+                },
+                {
+                    "text": "resilient",
+                    "answer_bg": "rgb(255, 246, 170)",
+                    "outcome": ["rock", "steel"]
+                },
+                {
+                    "text": "intuitive",
+                    "answer_bg": "rgb(202, 227, 253)",
+                    "outcome": ["psychic"]
+                },
+                {
+                    "text": "passionate",
+                    "answer_bg": "rgb(255, 246, 170)",
+                    "outcome": ["fire"]
                 }
             ]
         },
@@ -897,46 +942,56 @@ $("#submit").on("click", function(e) {
     }
 );
 
-  function calculateResults(choices) {
-    // create a map of the tally of each outcome's score 
-    var score = new Map();
-    
-    for (i = 0; i < choices.length; i++)
+// close the modal with the "X" button
+$("#close-modal").click(function() {
+    // reblock the modal display
+    $("#resultsModal").removeClass("visible");
+    $("#resultsModal").addClass("hidden");
+
+    // clear the appended content in the modal
+    $(".modal-content").empty();
+  });
+
+function calculateResults(choices) {
+// create a map of the tally of each outcome's score 
+var score = new Map();
+
+for (i = 0; i < choices.length; i++)
+{
+    // store the answer in the results map
+    var a = choices[i];
+    var question = data.questions[i];
+    var answer = question.answers[a];
+    var outcomes = answer.outcome;
+    var weight = question.weight;
+
+    for (var j = 0; j < outcomes.length; j++)
     {
-        // store the answer in the results map
-        var a = choices[i];
-        var question = data.questions[i];
-        var answer = question.answers[a];
-        var outcomes = answer.outcome;
-        var weight = question.weight;
+        var outcome = outcomes[j];
 
-        for (var j = 0; j < outcomes.length; j++)
+        const value = score.get(outcome);
+
+        if (score.has(outcome))
         {
-            var outcome = outcomes[j];
-
-            const value = score.get(outcome);
-
-            if (score.has(outcome))
-            {
-                score.set(outcome, value + (1 * weight));
-            }
-            else
-            {
-                score.set(outcome, (1 * weight));
-            }
+            score.set(outcome, value + (1 * weight));
+        }
+        else
+        {
+            score.set(outcome, (1 * weight));
         }
     }
-    
-    return findMaxKey(score);
-  }
+}
 
-  // resource: https://stackoverflow.com/questions/11301438/return-index-of-greatest-value-in-an-array
-  function findMaxKey(map) {
+return findMaxKey(score);
+}
+
+// resource: https://stackoverflow.com/questions/11301438/return-index-of-greatest-value-in-an-array
+function findMaxKey(map) {
     if (map.size === 0) 
     {
         return -1;
     }
-    
+
     // convert to array to iterate over and compare elements
     var arr = Array.from(map);
 

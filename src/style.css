@@ -244,12 +244,14 @@ input[type=radio] {
 
 .hidden {
         display: none;
+        transition-duration: 0.75s;
     }
 
 .visible {
         display: flex;
         justify-content: center;
         align-items: center;
+        transition-duration: 0.75s;
     }
 
 .errorImg {
@@ -273,14 +275,14 @@ input[type=radio] {
     }
 
 #resultsModal {
-        transition: display 0.5s;
+        transition: display 0.75s;
     }
 
 .modal-container {
         flex-direction: column;
         background-color: rgb(252, 252, 252);
         width: 850px;
-        height: 720px;
+        height: 800px;
         position: relative;
     }
 
@@ -303,6 +305,7 @@ input[type=radio] {
         text-align: center;
         justify-content: center;
         align-items: center;
+        margin-top: 25px;
 }
 
 .outcome-img {
@@ -325,10 +328,13 @@ input[type=radio] {
         margin: 10px 25px 40px 0px;
         background-color: rgba(82, 69, 49);
         border-style: solid;
-        border-radius: 4px;
+        border-radius: 10px;
         border-color: rgb(252, 250, 229);
         color: rgb(252, 250, 229);
         font-weight: 800;
+        transition-duration: 0.75s;
+        padding: 4 10;
+        font-size: 18px;
     }
 
 #close-modal:hover {
