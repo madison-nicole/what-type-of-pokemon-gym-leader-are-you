@@ -817,5 +817,84 @@
                 }
             ]
         }
+    ],
+
+    "creator_tag": "made by xGigglypuff.",
+    "support_button_text": "",
+    "footer_columns": [
+        {
+            "heading": "Find Me",
+            "links": [
+                {
+                    "text": "Twitter",
+                    "url": "https://twitter.com/xGigglypuff"
+                },
+                {
+                    "text": "Twitch",
+                    "url": "https://www.twitch.tv/xGigglypuff/"
+                },
+                {
+                    "text": "YouTube",
+                    "url": "https://www.youtube.com/@xGigglypuff/featured"
+                },
+                {
+                    "text": "Instagram",
+                    "url": "https://www.instagram.com/gov.madison/"
+                },
+                {
+                    "text": "Reddit",
+                    "url": "https://www.reddit.com/user/xgigglypuff"
+                }
+            ]
+        },
+        {
+            "heading": "The Quiz",
+            "links": [
+                {
+                    "text": "Take It Again",
+                    "url": ""
+                },
+                {
+                    "text": "The Algorithm",
+                    "url": "algorithm.html"
+                }
+            ]
+        },
+        {
+            "heading": "Resources",
+            "links": [
+                {
+                    "text": "Art Credits",
+                    "url": "art-credits.html"
+                },
+                {
+                    "text": "Code Resources",
+                    "url": "code-resources.html"
+                },
+                {
+                    "text": "Related Quizzes",
+                    "url": "related-quizzes.html"
+                }
+            ]
+        },
+        {
+            "heading": "More Pokemon!",
+            "links": [
+                {
+                    "text": "Play the Games",
+                    "url": "https://www.pokemon.com/us/pokemon-video-games/all-pokemon-games"
+                },
+                {
+                    "text": "Watch the Anime",
+                    "url": "https://www.pokemon.com/us/animation"
+                },
+                {
+                    "text": "Get Merch",
+                    "url": "https://www.pokemoncenter.com/"
+                }
+            ]
+        }
     ]
 }
+        
+        

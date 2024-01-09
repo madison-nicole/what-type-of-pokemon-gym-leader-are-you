@@ -817,12 +817,89 @@ var data = {
                 }
             ]
         }
+    ],
+
+    "creator_tag": "made by xGigglypuff.",
+    "support_button_text": "",
+    "footer_columns": [
+        {
+            "heading": "Find Me",
+            "links": [
+                {
+                    "text": "Twitter",
+                    "url": "https://twitter.com/xGigglypuff"
+                },
+                {
+                    "text": "Twitch",
+                    "url": "https://www.twitch.tv/xGigglypuff/"
+                },
+                {
+                    "text": "YouTube",
+                    "url": "https://www.youtube.com/@xGigglypuff/featured"
+                },
+                {
+                    "text": "Instagram",
+                    "url": "https://www.instagram.com/gov.madison/"
+                },
+                {
+                    "text": "Reddit",
+                    "url": "https://www.reddit.com/user/xgigglypuff"
+                }
+            ]
+        },
+        {
+            "heading": "The Quiz",
+            "links": [
+                {
+                    "text": "Take It Again",
+                    "url": ""
+                },
+                {
+                    "text": "The Algorithm",
+                    "url": "algorithm.html"
+                }
+            ]
+        },
+        {
+            "heading": "Resources",
+            "links": [
+                {
+                    "text": "Art Credits",
+                    "url": "art-credits.html"
+                },
+                {
+                    "text": "Code Resources",
+                    "url": "code-resources.html"
+                },
+                {
+                    "text": "Related Quizzes",
+                    "url": "related-quizzes.html"
+                }
+            ]
+        },
+        {
+            "heading": "More Pokemon!",
+            "links": [
+                {
+                    "text": "Play the Games",
+                    "url": "https://www.pokemon.com/us/pokemon-video-games/all-pokemon-games"
+                },
+                {
+                    "text": "Watch the Anime",
+                    "url": "https://www.pokemon.com/us/animation"
+                },
+                {
+                    "text": "Get Merch",
+                    "url": "https://www.pokemoncenter.com/"
+                }
+            ]
+        }
     ]
 }
 // retrieve the data
 // used https://api.jquery.com/jquery.getjson/ as a resource
 
-//append the data
+// append the data
 // retrieves and appends header
 $('title').append(data.title);
 $('header').append(`<h1>${data.title}</h1>`);
@@ -943,14 +1020,30 @@ $("#submit").on("click", function(e) {
 );
 
 // close the modal with the "X" button
-$("#close-modal").click(function() {
-    // reblock the modal display
-    $("#resultsModal").removeClass("visible");
-    $("#resultsModal").addClass("hidden");
+$("#close-modal").click(hideModal);
 
-    // clear the appended content in the modal
-    $(".modal-content").empty();
+// close the modal when the user clicks outside of the modal window
+window.onclick = function(event) {
+    if (event.target == modal) {
+        hideModal();
+    }
+}
+
+// try the quiz again + reset answers with the "Try Again" button
+$("#try-again").click(hideModal, function() {
+    // reset the quiz answers + go back to the top of the page
+    location.reload();
+
+    $(window).scrollTop(position);
   });
+
+// source: https://stackoverflow.com/questions/5404839/how-can-i-refresh-a-page-with-jquery
+// resets answers + refreshes page
+// $("#reset").click(function() {
+//     $(".modal").hide();
+//     $(".flex-container").css("opacity","1");
+//     location.reload();
+// });
 
 function calculateResults(choices) {
 // create a map of the tally of each outcome's score 
@@ -1010,4 +1103,13 @@ function findMaxKey(map) {
     });
 
     return maxKey;
+}
+
+function hideModal() {
+    // reblock the modal display
+    $("#resultsModal").removeClass("visible");
+    $("#resultsModal").addClass("hidden");
+
+    // clear the appended content in the modal
+    $(".modal-content").empty();
 }
