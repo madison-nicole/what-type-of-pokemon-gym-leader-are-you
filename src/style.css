@@ -242,9 +242,10 @@ input[type=radio] {
         cursor: pointer;
     }
 
+    /* todo fix fadeOut */
 .hidden {
         display: none;
-        transition-duration: 0.75s;
+        animation: fadeOut .5s;
     }
 
 .visible {
@@ -276,6 +277,14 @@ input[type=radio] {
 
 #resultsModal {
         transition: display 0.75s;
+        animation-name: animateToptoBottom;
+    animation-duration: 0.4s
+}
+
+/* have modal animate from top to bottom */
+@keyframes animateToptoBottom {
+    from {top: -100px; opacity: 0}
+    to {top: 0; opacity: 1}
     }
 
 .modal-container {
@@ -306,6 +315,36 @@ input[type=radio] {
         justify-content: center;
         align-items: center;
         margin-top: 25px;
+        transform:scaleY(.01) scaleX(0);
+    animation:pushOut 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    } 100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    } 100% {
+        opacity: 0;
+    }
+}
+
+@keyframes pushOut {
+    0% {
+        transform:scaleY(.005) scaleX(0);
+    }
+    50% {
+        transform:scaleY(.005) scaleX(1);
+    }
+    100% {
+        transform:scaleY(1) scaleX(1);
+    }
 }
 
 .outcome-img {

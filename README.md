@@ -10,7 +10,7 @@
 
 <div align="center">
   <p>This program is a quiz that tells you which type of gym leader you would be in the fictional universe of Pokemon.</p>
-  <p>The quiz has 7 questions with a varying number of answer options for each. </p>
+  <p>The quiz has 8 questions with a varying number of answer options for each. </p>
   <p>Each answer corresponds to one or multiple outcomes and increments the total points towards the outcome accordingly. </p>
 </div>
 

@@ -253,7 +253,7 @@
                 {
                     "text": "reading a fantasy book",
                     "answer_bg": "rgb(255, 225, 216)",
-                    "outcome": ["fairy"]
+                    "outcome": ["fairy", "dragon"]
                 },
                 {
                     "text": "hiking",
@@ -467,7 +467,7 @@
                 {
                     "text": "&#128508; heights &#128508;",
                     "answer_bg": "rgb(255, 239, 103)",
-                    "outcome": ["grass", "poison", "bug"]
+                    "outcome": ["grass", "fighting", "bug"]
                 },
                 {
                     "text": "&#127793; earthquakes &#127793;",

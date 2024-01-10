@@ -1022,7 +1022,7 @@ $("#submit").on("click", function(e) {
 // close the modal with the "X" button
 $("#close-modal").click(hideModal);
 
-// close the modal when the user clicks outside of the modal window
+// *todo* close the modal when the user clicks outside of the modal window
 window.onclick = function(event) {
     if (event.target == modal) {
         hideModal();
@@ -1031,19 +1031,12 @@ window.onclick = function(event) {
 
 // try the quiz again + reset answers with the "Try Again" button
 $("#try-again").click(hideModal, function() {
-    // reset the quiz answers + go back to the top of the page
+    // reset the quiz answers
     location.reload();
 
-    $(window).scrollTop(position);
+    // *todo* go back to the top of the page
+    window.scrollTo(0,0);
   });
-
-// source: https://stackoverflow.com/questions/5404839/how-can-i-refresh-a-page-with-jquery
-// resets answers + refreshes page
-// $("#reset").click(function() {
-//     $(".modal").hide();
-//     $(".flex-container").css("opacity","1");
-//     location.reload();
-// });
 
 function calculateResults(choices) {
 // create a map of the tally of each outcome's score 
