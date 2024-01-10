@@ -300,13 +300,13 @@ input[type=radio] {
         font-weight: 700;
         color: rgba(82, 69, 49);
         text-align: center;
-}
+    }
 
 .modal-content > p {
         color: rgb(82, 69, 49);
         margin: 20px 30px 30px 30px;
         width: 700px;
-}
+    }
 
 .modal-content {
         display: flex;
@@ -314,10 +314,9 @@ input[type=radio] {
         text-align: center;
         justify-content: center;
         align-items: center;
-        margin-top: 25px;
         transform:scaleY(.01) scaleX(0);
-    animation:pushOut 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
-}
+        animation:pushOut 1s cubic-bezier(0.165, 0.840, 0.460, 1.000) forwards;
+    }
 
 @keyframes fadeIn {
     0% {
@@ -354,7 +353,7 @@ input[type=radio] {
 .card {
         box-shadow: 0 2px 8px 0 rgba(82, 69, 49, 0.3), 0 3px 20px 0 rgba(82, 69, 49, 0.29);
         border-radius: 4px;
-        margin-top: 55px;
+        margin-top: 30px;
     }
 
 .close {
@@ -363,8 +362,7 @@ input[type=radio] {
     }
 
 #close-modal {
-        position: absolute;
-        margin: 10px 25px 40px 0px;
+        margin: 10px 25px 0px 0px;
         background-color: rgba(82, 69, 49);
         border-style: solid;
         border-radius: 10px;
