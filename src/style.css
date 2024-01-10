@@ -427,7 +427,7 @@ footer {
 
 .footerLists {
         display: flex;
-        margin-left: 200px;
+        margin-left: 160px;
         flex-direction: row;
     }
 
@@ -436,12 +436,13 @@ footer {
         font-size: 14px;
         color: rgb(82, 69, 49);
         list-style-type: none;
+        width: 170px;
     }
 
 .footerList {
         display: flex;
         flex-direction: column;
-        margin-right: 140px;
+        margin-right: 80px;
     }
 
 .footerList > a {

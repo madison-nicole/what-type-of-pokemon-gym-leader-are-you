@@ -1024,9 +1024,10 @@ $("#close-modal").click(hideModal);
 
 // *todo* close the modal when the user clicks outside of the modal window
 window.onclick = function(event) {
-    if (event.target == modal) {
-        hideModal();
-    }
+    console.log(`event.target is ${event.target}`);
+    // if (event.target == modal) {
+    //     hideModal();
+    // }
 }
 
 // try the quiz again + reset answers with the "Try Again" button

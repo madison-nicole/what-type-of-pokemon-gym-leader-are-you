@@ -1,7 +1,7 @@
 <h1 align="center">What Type of Pokemon Gym Leader are You?</h1>
 
 <div align="center">
-  Take the <a href="https://www.quiz.com/">quiz</a>
+  Take the quiz!
 </div>
 
 <div align="center">
@@ -40,8 +40,16 @@ Upon viewing your results, you can close the modal, reset your answers to take t
 - 'main.js' contains the javascript necessary for the page interactivity, which is a mixture of both native JS and jQuery.
 - 'style.css' contains the style document.
 - 'index.html' is the quiz structure but can be repurposed for any quiz as all data is imported from the json file.
+- 'data.json' contains the quiz data specific to this quiz- including questions, question data, question style specifics, answers, answer data, images, titles, etc.
+- '/src/media' contains all of the images and gifs used for the project.
+- 'algorithm.html' is a webpage that can be accessed by users from the main page footer that explains the quiz algorithm and how the results are calculated, if quiz takers are curious.
+- 'art-credits.html' is a webpage that can be accessed by users from the main page footer and lists all of the artwork used and credits all of the artists, complete with links to their portfolios.
+- 'code-resources.html' is a webpage that can be accessed by users from the main page footer and lists all of the sources used in order to complete the code for this project.
+- 'related-quizzes.html' is a webpage that can be accessed by users from the main page footer and lists any related quizzes that I found that have been used for inspiration.
+- 'info-style.css' is a style document for the info pages, which are algorithm, art-credits, code-resources, and related-quizzes.
+- 'info.js' is the javascript necessary for the buttons specific to the info pages listed above. 
 
-## Sources
+## Code Resources
 Some resources that I used to learn more about HTML, CSS, JavaScript, and jQuery for this project are listed below:
 - implementing the [modal](https://www.w3schools.com/howto/howto_css_modals.asp)
 - importing a json file using [jQuery](https://api.jquery.com/jquery.getjson/)
