@@ -1031,13 +1031,17 @@ window.onclick = function(event) {
 }
 
 // try the quiz again + reset answers with the "Try Again" button
-$("#try-again").click(hideModal, function() {
+$("#try-again").click(function() {
+    // scroll to the top of the page
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "instant",
+    });
     // reset the quiz answers
-    location.reload();
-
-    // *todo* go back to the top of the page
-    window.scrollTo(0,0);
-  });
+    window.location.reload();
+    hideModal(); 
+});
 
 function calculateResults(choices) {
 // create a map of the tally of each outcome's score 
@@ -1107,3 +1111,4 @@ function hideModal() {
     // clear the appended content in the modal
     $(".modal-content").empty();
 }
+
