@@ -1022,12 +1022,11 @@ $("#submit").on("click", function(e) {
 // close the modal with the "X" button
 $("#close-modal").click(hideModal);
 
-// *todo* close the modal when the user clicks outside of the modal window
+// close the modal when the user clicks outside of the modal window
 window.onclick = function(event) {
-    console.log(`event.target is ${event.target}`);
-    // if (event.target == modal) {
-    //     hideModal();
-    // }
+    if ($(event.target).hasClass("modal")) {
+        hideModal()
+    }
 }
 
 // try the quiz again + reset answers with the "Try Again" button
