@@ -347,7 +347,8 @@ input[type=radio] {
 }
 
 .outcome-img {
-        width: 400px;
+        max-height: 350px;
+        max-width: 500px;
     }
 
 .card {
