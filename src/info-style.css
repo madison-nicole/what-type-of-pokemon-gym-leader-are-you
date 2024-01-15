@@ -243,11 +243,24 @@ footer {
         }
 
     .algorithm-explanation > p {
-            width: 100%;
+            width: 97%;
+            font-size: 13px;
         }
 
     .algorithm-container {
-        width: 100%
+            width: 92%
+        }
+    
+    .algorithm-container > ul {
+            margin: 0;
+        }
+
+    .question {
+            font-size: 16px;
+        }
+
+    .algorithm-container > p {
+            font-size: 13px;
     }
 
     .credits > p {
