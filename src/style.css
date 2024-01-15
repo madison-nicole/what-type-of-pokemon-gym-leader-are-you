@@ -201,7 +201,7 @@ this method makes an element wiggle*/
         border-style: solid; 
         border-radius: 4px;
         border-color: rgb(82, 69, 49);
-        width: 210px;
+        width: 40%;
         height: 45px;
         display: flex;
         align-items: center;
@@ -492,14 +492,14 @@ footer {
     }
 
     .img-text-IMG {
-        max-width: 90px;
-        max-height: 90px;
+        max-width: 110px;
+        max-height: 110px;
         margin: 0;
     }
 
     .img-only-label {
-        max-width: 90px;
-        max-height: 90px;
+        height: 110px;
+        width: 110px;
     }
 
     .img-only {
@@ -544,8 +544,8 @@ footer {
     }
 
     .selector-img {
-        top: -32;
-            left: 16;
+        top: -50;
+        left: 38;
     }
 
     .modal-container {
