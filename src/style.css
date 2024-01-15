@@ -201,7 +201,7 @@ this method makes an element wiggle*/
         border-style: solid; 
         border-radius: 4px;
         border-color: rgb(82, 69, 49);
-        width: 40%;
+        width: 210px;
         height: 45px;
         display: flex;
         align-items: center;
@@ -507,7 +507,7 @@ footer {
     }
 
     .text-only {
-        width: 143px;
+        width: 40%;
         height: 20px;
         font-size: 12px;
         font-weight: 500;
