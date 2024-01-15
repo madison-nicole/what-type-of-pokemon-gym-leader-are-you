@@ -494,11 +494,16 @@ footer {
         .img-text-IMG {
             max-width: 60px;
             max-height: 50px;
+            margin: 0;
         }
 
         .img-only-label {
             max-width: 60px;
             max-height: 50px;
+        }
+
+        .img-only {
+            margin: 15px 0px 15px 0px;
         }
 
         .text-only {
@@ -518,6 +523,8 @@ footer {
             text-align: center;
             font-weight: 400;
             font-size: 12px;
+            display: flex;
+            flex-direction: column;
         }
 
         .img-text > label > img {
