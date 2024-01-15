@@ -640,5 +640,8 @@ footer {
         #jigglypuff {
             margin-top: 30px;
             margin-right: 30px;
+            max-width: 40px;
+            max-height: 40px;
+}
         }
 }
