@@ -542,4 +542,48 @@ footer {
             height: 50px;
             font-size: 18px;
         }
+
+        .selector-img {
+            top: -32;
+             left: 16;
+        }
+
+        .modal-container {
+            width: 90%;
+            height: 90%;
+        }
+
+        #close-modal {
+            margin: 8px 10px 0px 0px;
+            font-size: 12px;
+        }
+
+        .card {
+            margin-top: 12px;
+        }
+
+        .outcome-img {
+            max-width: 300px;
+            max-height: 200px;
+        }
+
+        .modal-content > p {
+            margin: 30px 30px 10px 30px;
+            width: 300px;
+            font-size: 12px;
+        }
+
+        .end-buttons {
+            margin-top: 0px;
+        }
+
+        .end-buttons > button {
+            font-size: 14px;
+            padding: 10px 10px;
+        }
+
+        #submit {
+            font-size: 18px;
+            padding: 10px 10px;
+        }
 }
