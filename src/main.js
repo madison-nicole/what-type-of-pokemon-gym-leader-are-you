@@ -145,11 +145,23 @@ $.getJSON("data.json", function(data) {
 
     });
 
+    
+    var shareData = {
+        title: "What Type of Pokemon Gym Leader are You?",
+        text: "Take the quiz to find out!",
+        url: "https://developer.mozilla.org",
+      };
+    
     // have the share button share the quiz link
-    $("#share").click(function() {
-        navigator.share("https://www.google.com");
+    $("#share").click(async () => {
+        try {
+          await navigator.share(shareData);
+          console.log("Quiz shared successfully");
+        } catch (err) {
+            console.log(`Error: ${err}`);
+        }
     });
-
+      
     function calculateResults(choices) {
     // create a map of the tally of each outcome's score 
     var score = new Map();
