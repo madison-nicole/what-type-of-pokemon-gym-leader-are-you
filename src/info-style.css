@@ -242,6 +242,14 @@ footer {
             font-size: 28px;
         }
 
+    .algorithm-explanation > p {
+            width: 100%;
+        }
+
+    .algorithm-container {
+        width: 100%
+    }
+
     .credits > p {
             margin: 0px 0px 5px 0px;
             width: 80%;
@@ -251,21 +259,27 @@ footer {
 
     .credits-container {
             width: 90%;
-            margin: 10px 0px 20px 0px;
+            margin: 0;
         }
 
     .credits-container > ul {
-            margin: 10px 0px 10px 40px;
+            margin: 10px 0px 10px 0px;
         }
     
     .credits-container > ul > li {
-            font-size: 13px;
+            font-size: 11px;
             margin-bottom: 10px;
+        }
+    
+    .credits-container > ul > li > a {
+            font-size: 9px;
+            padding: 1px 3px;
         }
 
     #go-back {
             font-size: 18px;
             padding: 10px 10px;
+            margin-top: 10px;
         }
 
     .background-img {
