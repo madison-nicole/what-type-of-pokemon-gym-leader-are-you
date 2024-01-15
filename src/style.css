@@ -117,8 +117,8 @@ h1 {
     }
 
 .img-only-label {
-        max-height: 140px;
-        max-width: 130px;
+        height: 140px;
+        width: 130px;
     }
 
 /*source: https://stackoverflow.com/questions/38132700/css-wiggle-shake-effect
