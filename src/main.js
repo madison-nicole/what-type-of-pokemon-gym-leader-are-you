@@ -87,49 +87,12 @@ $.getJSON("data.json", function(data) {
     var errorModal = document.getElementById("errorMsg");
     var submit = document.getElementById("submit");
 
+    var shareFiles = null;
 
-    $("#submit").on("click", function(e) {
-        // gather all checked radio-button values
-        var choices = $(".selected > label > input").map((i, radio) => {
-            return $(radio).val();
-        }).toArray(choices);
-        // creates an array of choices = ["valueofradiobox1", "valueofradiobox2", "valueofradiobox2"]
 
-        // ensure all of the questions are answered
-        if(choices.length !== data.questions.length) 
-        {
-            $(".error-container").append("<img class='errorImg' src='media/answer-all-questions.gif'/>");
-            $(".error-container").removeClass("hidden");
-            $(".error-container").addClass("visible");
+    $("#submit").on("click", submitResults());
 
-            setTimeout(() => {$(".error-container").addClass("hidden"); $(".error-container").removeClass("visible");}, 5000);
-            return;
-        }
-
-        var c = calculateResults(choices);
-
-        // display the result
-        var outcomeTitle = data.outcomes[c].type;
-        var outcomeImg = data.outcomes[c].img;
-        var outcomeText = data.outcomes[c].text;
-
-        // unblock the modal display
-        $("#resultsModal").removeClass("hidden");
-        $("#resultsModal").addClass("visible");
-        
-        $(".modal-content").append("<div class='card'><h3>" + outcomeTitle  + "</h3> <img class='outcome-img' src='" + outcomeImg + "'/></div><p>" + outcomeText + "</p>");
-        }
-    );
-
-    // close the modal with the "X" button
-    $("#close-modal").click(hideModal);
-
-    // close the modal when the user clicks outside of the modal window
-    window.onclick = function(event) {
-        if ($(event.target).hasClass("modal")) {
-            hideModal()
-        }
-    }
+    console.log("c is " + submitResults());
 
     // try the quiz again + reset answers with the "Try Again" button
     $("#try-again").click(function() {
@@ -145,14 +108,19 @@ $.getJSON("data.json", function(data) {
 
     });
 
+    // store the card for sharing results
+    var c = submitResults();
+    shareFiles = data.outcomes[c].card;
+    console.log(shareFiles);
     
     var shareData = {
         title: "What Type of Pokemon Gym Leader are You?",
         text: "Take the quiz to find out!",
         url: "https://what-type-of-pokemon-gym-leader-are-you-tcg6.onrender.com",
+        files: shareFiles
       };
     
-    // have the share button share the quiz link
+    // have the share button share the quiz link and results card image
     $("#share").click(async () => {
         try {
           await navigator.share(shareData);
@@ -162,6 +130,16 @@ $.getJSON("data.json", function(data) {
         }
     });
       
+    // close the modal with the "X" button
+    $("#close-modal").click(hideModal);
+
+    // close the modal when the user clicks outside of the modal window
+    window.onclick = function(event) {
+        if ($(event.target).hasClass("modal")) {
+            hideModal()
+        }
+    }
+    
     function calculateResults(choices) {
     // create a map of the tally of each outcome's score 
     var score = new Map();
@@ -241,5 +219,40 @@ $.getJSON("data.json", function(data) {
         $(".not-selected").removeClass("not-selected");
         $(".selector-img").removeClass("visible");
         $(".selector-img").addClass("hidden");
+    }
+
+    function submitResults() {
+        // gather all checked radio-button values
+        var choices = $(".selected > label > input").map((i, radio) => {
+            return $(radio).val();
+        }).toArray(choices);
+        // creates an array of choices = ["valueofradiobox1", "valueofradiobox2", "valueofradiobox2"]
+
+        // ensure all of the questions are answered
+        if(choices.length !== data.questions.length) 
+        {
+            $(".error-container").append("<img class='errorImg' src='media/answer-all-questions.gif'/>");
+            $(".error-container").removeClass("hidden");
+            $(".error-container").addClass("visible");
+
+            setTimeout(() => {$(".error-container").addClass("hidden"); $(".error-container").removeClass("visible");}, 5000);
+            return;
+        }
+
+        var c = calculateResults(choices);
+
+        // display the result
+        var outcomeTitle = data.outcomes[c].type;
+        var outcomeImg = data.outcomes[c].img;
+        var outcomeText = data.outcomes[c].text;
+
+        // unblock the modal display
+        $("#resultsModal").removeClass("hidden");
+        $("#resultsModal").addClass("visible");
+        
+        $(".modal-content").append("<div class='card'><h3>" + outcomeTitle  + "</h3> <img class='outcome-img' src='" + outcomeImg + "'/></div><p>" + outcomeText + "</p>");
+        
+        // return the index for the outcome
+        return c;
     }
 });
