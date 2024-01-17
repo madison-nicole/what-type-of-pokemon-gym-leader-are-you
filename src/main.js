@@ -90,9 +90,7 @@ $.getJSON("data.json", function(data) {
     var shareFiles = null;
 
 
-    $("#submit").on("click", submitResults());
-
-    console.log("c is " + submitResults());
+    $("#submit").on("click", submitResults); 
 
     // try the quiz again + reset answers with the "Try Again" button
     $("#try-again").click(function() {
@@ -107,27 +105,54 @@ $.getJSON("data.json", function(data) {
         hideModal(); 
 
     });
-
+    
+ // have the share button share the quiz link and results card image
+ $("#share").click(() => {
     // store the card for sharing results
-    var c = submitResults();
-    shareFiles = data.outcomes[c].card;
-    console.log(shareFiles);
-    
-    var shareData = {
-        title: "What Type of Pokemon Gym Leader are You?",
-        text: "Take the quiz to find out!",
-        url: "https://what-type-of-pokemon-gym-leader-are-you-tcg6.onrender.com",
-        files: shareFiles
-      };
-    
-    // have the share button share the quiz link and results card image
-    $("#share").click(async () => {
-        try {
-          await navigator.share(shareData);
-          console.log("Quiz shared successfully");
-        } catch (err) {
-            console.log(`Error: ${err}`);
-        }
+    var c = getResultsIndex();
+    shareFile = data.outcomes[c].card;
+    console.log(shareFile);
+
+    fetch(shareFile)
+        .then(res => res.blob())
+        .then(blob => {
+            var file = new File([blob], 'results.png', blob);
+            console.log(file);
+
+            var shareData = {
+                title: "What Type of Pokemon Gym Leader are You?",
+                text: "Take the quiz to find out what type of Pokemon Gym Leader you would be!",
+                url: "https://what-type-of-pokemon-gym-leader-are-you-tcg6.onrender.com/",
+                files: [file]
+            };
+
+            var shareDataLink = {
+                title: "What Type of Pokemon Gym Leader are You?",
+                text: "Take the quiz to find out what type of Pokemon Gym Leader you would be!",
+                url: "https://what-type-of-pokemon-gym-leader-are-you-tcg6.onrender.com/"
+            }
+
+            navigator.share(shareData)
+                    .then(() => {
+                        console.log("Quiz and file shared successfully");
+                    })
+                    .catch((err) => {
+                        console.log(`Error Sharing File: ${err}`);
+                        navigator.share(shareDataLink)
+                        .then(() => {
+                            console.log("Quiz shared successfully");
+                        })
+                        .catch((err) => {
+                            console.log(`Error Sharing Link: ${err}`);
+                            // copy link to clipboard
+                            // copy the text inside the text field
+                            navigator.clipboard.writeText(shareData.url);
+
+                            // alert the copied text
+                            alert("Link copied to clipboard");
+                        })
+                    })
+        })
     });
       
     // close the modal with the "X" button
@@ -221,11 +246,27 @@ $.getJSON("data.json", function(data) {
         $(".selector-img").addClass("hidden");
     }
 
-    function submitResults() {
-        // gather all checked radio-button values
+    function getChoices() {
         var choices = $(".selected > label > input").map((i, radio) => {
             return $(radio).val();
         }).toArray(choices);
+
+        return choices;
+    }
+
+    function getResultsIndex() {
+        var choices = getChoices();
+        if (choices.length != data.questions.length)
+        {
+            return -1;
+        }
+        var c = calculateResults(choices);
+        return c
+    }
+
+    function submitResults() {
+        // gather all checked radio-button values
+        var choices = getChoices();
         // creates an array of choices = ["valueofradiobox1", "valueofradiobox2", "valueofradiobox2"]
 
         // ensure all of the questions are answered
@@ -249,9 +290,9 @@ $.getJSON("data.json", function(data) {
         // unblock the modal display
         $("#resultsModal").removeClass("hidden");
         $("#resultsModal").addClass("visible");
-        
+
         $(".modal-content").append("<div class='card'><h3>" + outcomeTitle  + "</h3> <img class='outcome-img' src='" + outcomeImg + "'/></div><p>" + outcomeText + "</p>");
-        
+
         // return the index for the outcome
         return c;
     }
