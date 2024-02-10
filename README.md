@@ -18,8 +18,6 @@
   <p>The quiz has 8 questions with a varying number of answer options for each. </p>
   <p>Each answer corresponds to one or multiple outcomes and increments the total points towards the outcome accordingly. </p>
 </div>
-
-<br>
 <br>
 <br>
 
