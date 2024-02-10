@@ -10,9 +10,9 @@
 
 <div align="center">
   <p>This program is a quiz that tells you which type of gym leader you would be in the fictional universe of Pokemon.</p>
-<p><b>This quiz received over 100,000 users in the first three days and is still growing. Here are the analytics: </b></p>
+<p><b>This quiz received over 100,000 users in the first 3 days and is still growing. Here are the analytics: </b></p>
 <br>
-<img src="https://github.com/m-saylor/what-type-of-pokemon-gym-leader-are-you/blob/main/readme-media/google-analytics-report.png"/>
+<img width="60%" height="60%" src="https://github.com/m-saylor/what-type-of-pokemon-gym-leader-are-you/blob/main/readme-media/google-analytics-report.png"/>
 <br>
   
   <p>The quiz has 8 questions with a varying number of answer options for each. </p>
