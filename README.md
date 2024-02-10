@@ -21,12 +21,6 @@
 
 <br>
 <br>
-
-<div align="center">
-  <img width="40%" height="40%" src="https://github.com/m-saylor/what-type-of-pokemon-gym-leader-are-you/blob/main/readme-media/PokemonTypes.png"/>
-</div>
-
-<br>
 <br>
 
 ## How to Use
@@ -34,7 +28,7 @@ Simply answer each question and click the submit button to see your results. If 
 Upon viewing your results, you can close the modal, reset your answers to take the quiz again, or share your results.
 
 <div align="center">
-  <img width="70%" height="70%" src="https://github.com/m-saylor/what-type-of-pokemon-gym-leader-are-you/blob/main/readme-media/eeveelutions-background.jpg"/>
+  <img width="70%" height="70%" src="https://github.com/m-saylor/what-type-of-pokemon-gym-leader-are-you/blob/main/readme-media/Pokemon-Type-Quiz-Demo.GIF"/>
 </div>
 
 <br>
