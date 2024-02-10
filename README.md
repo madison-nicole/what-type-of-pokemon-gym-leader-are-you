@@ -14,21 +14,20 @@
 <br>
 <img width="60%" height="60%" src="https://github.com/m-saylor/what-type-of-pokemon-gym-leader-are-you/blob/main/readme-media/google-analytics-report.png"/>
 <br>
-  
-  <p>The quiz has 8 questions with a varying number of answer options for each. </p>
-  <p>Each answer corresponds to one or multiple outcomes and increments the total points towards the outcome accordingly. </p>
 </div>
 <br>
 <br>
 
 ## How to Use
-Simply answer each question and click the submit button to see your results. If you don't answer all of the questions, you will receive an error message and will have to finish the quiz. 
-Upon viewing your results, you can close the modal, reset your answers to take the quiz again, or share your results.
-
+The quiz has 8 questions with a varying number of answer options for each. Each answer corresponds to one or multiple outcomes and increments the total points towards the outcome accordingly.
 <div align="center">
   <img width="70%" height="70%" src="https://github.com/m-saylor/what-type-of-pokemon-gym-leader-are-you/blob/main/readme-media/Pokemon-Type-Quiz-Demo.GIF"/>
 </div>
+<br>
+Simply answer each question and click the submit button to see your results. If you don't answer all of the questions, you will receive an error message and will have to finish the quiz. 
+Upon viewing your results, you can close the modal, reset your answers to take the quiz again, or share your results.
 
+<br>
 <br>
 
 ## Specifications
