@@ -30,6 +30,9 @@ Upon viewing your results, you can close the modal, reset your answers to take t
 <br>
 <br>
 
+## Technical Aspects
+This program was built using HTML5, CSS3, JavaScript, and jQuery. The quiz was built and deployed through Render.
+
 ## Specifications
 - The '/src' file contains all of the files necessary to run the program.
 - The program imports data for the questions, answers, images, outcomes, and anything specific to the quiz via a JSON file, named 'data.json.' Thus, the code could be reused for any future quiz.
