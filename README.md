@@ -5,7 +5,7 @@
 </div>
 
 <div align="center">
-  <img width="10%" height="10%" src="https://github.com/m-saylor/what-type-of-pokemon-gym-leader-are-you/blob/main/readme-media/chikorita-dance.gif">
+  <img width="12%" height="12%" src="https://github.com/m-saylor/what-type-of-pokemon-gym-leader-are-you/blob/main/readme-media/chikorita-dance.gif">
 </div>
 
 <div align="center">
