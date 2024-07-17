@@ -5,14 +5,14 @@
 </div>
 
 <div align="center">
-  <img width="12%" height="12%" src="https://github.com/m-saylor/what-type-of-pokemon-gym-leader-are-you/blob/main/readme-media/chikorita-dance.gif">
+  <img width="12%" height="12%" src="https://github.com/madison-nicole/what-type-of-pokemon-gym-leader-are-you/blob/main/readme-media/chikorita-dance.gif">
 </div>
 
 <div align="center">
   <p>This program is a quiz that tells you which type of gym leader you would be in the fictional universe of Pokemon.</p>
 <p><b>This quiz received over 100,000 users in the first 3 days and is still growing. Here are the analytics: </b></p>
 <br>
-<img width="60%" height="60%" src="https://github.com/m-saylor/what-type-of-pokemon-gym-leader-are-you/blob/main/readme-media/google-analytics-report.png"/>
+<img width="60%" height="60%" src="https://github.com/madison-nicole/what-type-of-pokemon-gym-leader-are-you/blob/main/readme-media/google-analytics-report.png"/>
 <br>
 </div>
 <br>
@@ -21,7 +21,7 @@
 ## How to Use
 The quiz has 8 questions with a varying number of answer options for each. Each answer corresponds to one or multiple outcomes and increments the total points towards the outcome accordingly.
 <div align="center">
-  <img width="70%" height="70%" src="https://github.com/m-saylor/what-type-of-pokemon-gym-leader-are-you/blob/main/readme-media/Pokemon-Type-Quiz-Demo.GIF"/>
+  <img width="70%" height="70%" src="https://github.com/madison-nicole/what-type-of-pokemon-gym-leader-are-you/blob/main/readme-media/Pokemon-Type-Quiz-Demo.GIF"/>
 </div>
 <br>
 Simply answer each question and click the submit button to see your results. If you don't answer all of the questions, you will receive an error message and will have to finish the quiz. 
